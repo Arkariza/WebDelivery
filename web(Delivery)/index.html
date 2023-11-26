@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=7.0">
+  <title>Tugas Assesment</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    .badge img {
+        width: 20px;
+        height: auto;
+    }
+
+    .scrollable-content {
+      max-height: 425px; 
+      overflow-y: auto;
+      overflow-x: hidden;
+    }
+
+    body {
+    height: auto; 
+    width: auto; 
+    overflow: hidden;  
+    }
+  </style>
+</head>
+
+
+<body> 
+  <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: aqua;">
+    <div class="container-fluid">
+      <h2><b>Starbhak Mart</b></h2>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <br>
+  <div class="row g-0 text-center">
+    <div class="col-6 col-md-4">
+      <ul class="list-group">
+        <select class="form-select" aria-label="Default select example" style="text-align-last: center; background-color: aqua;">
+          <option selected>Take Away</option>
+          <option value="1">Delivery</option>
+        </select>
+        <br>
+        <button style="background-color: aqua;"><img src="image/user.png" style="width: 20px; height: 20px;"> Mr.Liberator</button>
+        <br>
+        
+        <div class="scrollable-content" id="list-harga" style="max-height: 275px; border: 1px solid #00000030; padding: 10px; height: 275px;">
+        
+        </div>
+      <div style="background-color: rgb(219, 219, 219); position: absolute; bottom: 0%; width: 435px;">
+        <p class="ammount" style="text-align: left;">Ammount: Rp. <a class="total-tanpa-pajak"></a></p>
+        <p class="tax" style="text-align: left;">Tax: Rp. <a class="pajak"></a></p>
+        <div style="background-color: aqua; text-align: left;">Total Ammount: Rp. <a class="item-total"></a></div>
+      </div>
+      </ul>
+    </div>
+    <div class="col-sm-6 col-md-8">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: aqua;">
+        <div class="container-fluid">
+          <a><b>Item List</b></a>
+          <div class="d-flex flex-row-reverse">
+            <button class="p-2" style="background: transparent; border: transparent;"><img src="image/swap.png" style="width: 20px;height: auto;"></button>
+            <button class="p-2" style="background: transparent; border: transparent;"><img src="image/dots.png" style="width: 20px;height: auto;"></button>
+            <button class="p-2" style="background: transparent; border: transparent;"><img src="image/search.png" style="width: 20px;height: auto;"></button>
+          </div>
+      </nav>
+      <div class="scrollable-content" style="border: 1px solid #00000030; padding: 10px;">
+      <div class="row">
+      <div class="card mb-2" style="width: 9rem;">
+        <img src="image/ham.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h6 class="card-title">Cheasy Ham</h6>
+          <p class="card-text">RP. 25.000</p>
+        </div>
+      </div>
+      <div class="card mb-2" style="width: 9rem;">
+        <img src="image/Steak.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h6 class="card-title">Steak</h6>
+          <p class="card-text">RP. 45.000</p>
+        </div>
+      </div>
+      <div class="card mb-2" style="width: 9rem;">
+        <img src="image/ChikB.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h6 class="card-title">Butter Chiken</h6>
+          <p class="card-text">RP. 30.000</p>
+        </div>
+      </div>
+      <div class="card mb-2" style="width: 9rem;">
+        <img src="image/MintIce.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h6 class="card-title">Ice Mint</h6>
+          <p class="card-text">RP. 25.000</p>
+        </div>
+      </div>
+      <div class="card mb-2" style="width: 9rem;">
+        <img src="image/EsCoklat.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h6 class="card-title">Chocolate Ice</h6>
+          <p class="card-text">RP. 25.500</p>
+        </div>
+      </div>
+      <div class="card mb-2" style="width: 9rem;">
+        <img src="image/lemon-juice.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h6 class="card-title">Lemonade</h6>
+          <p class="card-text">RP. 15.000</p>
+        </div>
+      </div>
+      <div class="card mb-2" style="width: 9rem;">
+        <img src="image/Puding.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h6 class="card-title">Chocolate Gel</h6>
+          <p class="card-text">RP. 20.000</p>
+        </div>
+      </div>
+      <div class="card mb-2" style="width: 9rem;">
+        <img src="image/pcellele.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h6 class="card-title">Pecel Lele</h6>
+          <p class="card-text">RP. 35.000</p>
+        </div>
+      </div>
+      <div class="card mb-2" style="width: 9rem;">
+        <img src="image/kungkang.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h6 class="card-title">Kangkung</h6>
+          <p class="card-text">RP. 50.000</p>
+        </div>
+      </div>
+      <div class="card mb-2" style="width: 9rem;">
+        <img src="image/Tahu.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h6 class="card-title">Fried Tofu</h6>
+          <p class="card-text">RP. 10.000</p>
+        </div>
+      </div>
+      <div class="card mb-2" style="width: 9rem;">
+        <img src="image/Donat.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h6 class="card-title">Donut</h6>
+          <p class="card-text">RP. 12.500</p>
+        </div>
+      </div>
+      <div class="card mb-2" style="width: 9rem;">
+        <img src="image/Hamburger.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h6 class="card-title">Hamburger</h6>
+          <p class="card-text">RP. 25.500</p>
+        </div>
+      </div>
+      <div class="card mb-2" style="width: 9rem;">
+        <img src="image/spicynugget.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h6 class="card-title">Spicy Nugget</h6>
+          <p class="card-text">RP. 35.500</p>
+        </div>
+      </div>
+      <div class="card mb-2" style="width: 9rem;">
+        <img src="image/FriedRice.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h6 class="card-title">Fried Rice</h6>
+          <p class="card-text">RP. 28.000</p>
+        </div>
+      </div>
+      <div class="card mb-2" style="width: 9rem;">
+        <img src="image/bbjuice.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h6 class="card-title">BB Juice</h6>
+          <p class="card-text">RP. 17.000</p>
+        </div>
+      </div>
+      <div class="card mb-2" style="width: 9rem;">
+        <img src="image/Roast Duck.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h6 class="card-title">Roast Duck</h6>
+          <p class="card-text">RP. 45.000</p>
+        </div>
+      </div>
+      <div class="card mb-2" style="width: 9rem;">
+        <img src="image/HD.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h6 class="card-title">Hot Dog</h6>
+          <p class="card-text">RP. 23.000</p>
+        </div>
+      </div>
+      <div class="card mb-2" style="width: 9rem;">
+        <img src="image/sndwich.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h6 class="card-title">Sandwich</h6>
+          <p class="card-text">RP. 19.500</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="position: absolute; right: 5%; bottom: -12%;">
+    <button type="button" class="btn btn-secondary"><img src="image/floppy-disk.png" style="width: 30px;height: auto;" > payment (CTRL P) </button>
+  </div>
+
+  
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+ 
+<script src="script/main.js"></script>
+ 
+</body>
+</html>
